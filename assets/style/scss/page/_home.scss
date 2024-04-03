@@ -1,0 +1,75 @@
+// header 
+.home__header {
+  padding: 0;
+  // navbar
+  &-navbar {
+    padding: 23px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    .navbar__link {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      li {
+        a {
+          color: $white;
+          &:hover {
+            color: $yellow;
+            transition: all 0.3s ease;
+          }
+        }
+        img {
+        }
+      }
+    }
+  }
+
+  //carousel
+  &-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    height: 810px;
+
+    .carousel__img {
+      position: relative;
+      height: 100%;
+      &-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        .title {
+          h1 {
+            font-family: "Sacramento";
+            font-size: 99px;
+            color: $yellow;
+          }
+          span {
+            font-family: "Plus Jakarta Sans";
+            font-size: 50px;
+            font-weight: 500;
+            color: $white;
+          }
+        }
+        p {
+          font-family: "Plus Jakarta Sans";
+          color: $white;
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+

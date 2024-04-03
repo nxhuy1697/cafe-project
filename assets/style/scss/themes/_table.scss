@@ -1,0 +1,40 @@
+.table {
+    thead{
+        th{
+            border: none;
+        }
+    }
+    td{
+        border: none;
+    }
+  .table__title-name {
+    p {
+      font-family: "Sacramento";
+      font-size: 48px;
+      color: $yellow;
+    }
+  }
+  .table__title-quantity {
+    p{
+        font-size: 15px;
+    }
+    span{
+        color: $yellow;
+        font-size: 12px;
+    }
+  }
+  .menu-item{
+    p{
+        font-weight: bold;
+        font-size: 15px;
+    }
+    span{
+        color: $grey;
+        font-size: 14px;
+        font-style: italic;
+    }
+  }
+  .menu-quantity{
+    font-weight: bold;
+  }
+}

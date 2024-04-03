@@ -1,0 +1,13 @@
+@import './base/base';
+@import './themes/variables';
+
+@import'./themes/table';
+
+
+//pages
+@import './page/home';
+@import './components/discover';
+@import './components/coffee';
+@import './components/food';
+@import './components/review';
+@import './components/footer';

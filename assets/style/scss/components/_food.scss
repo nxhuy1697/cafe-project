@@ -1,0 +1,62 @@
+.food {
+  padding: 0;
+  position: relative;
+  z-index: 0;
+  background-image: url("../../../../assets/img/food2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  min-height: 1100px;
+  overflow: hidden;
+  &__title {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    z-index: 1;
+    h1 {
+      font-family: "Sacramento";
+      font-size: 99px;
+      color: $yellow;
+
+    }
+    span {
+      font-family: "Plus Jakarta Sans";
+      font-size: 50px;
+      font-weight: 500;
+      color: $white;
+    }
+  }
+  &__menu {
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    &-img {
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 800px;
+
+
+      img {
+          width: 100%;
+          height: 100%;
+      }
+    }
+    &-detail {
+      position: absolute;
+      top: 0;
+      right: 5%;
+      padding: 50px;
+    }
+  }
+ 
+}
+.bread{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
