@@ -37,22 +37,25 @@
   </head>
   <body>
     <!-- header  -->
-    <header class="home__header container-fluid">
+    <header class="home__header container-fluid" id="home">
       <!-- navbar -->
-      <div class="home__header-navbar">
+      <div class="home__header-navbar ">
         <ul class="navbar__link">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">MENU</a></li>
-          <li><a href="#">BOOKING</a></li>
+          <li><a href="#home" class="active">HOME</a></li>
+          <li><a href="#discover">DISCOVER</a></li>
+          <li><a href="#coffee">COFFEE</a></li>
           <li>
-            <img
-              src="https://madebydesignesia.com/themes/baresto/images/logo.png"
-              alt=""
-            />
+            <a href="#" class="logo">
+              <img
+                src="https://madebydesignesia.com/themes/baresto/images/logo.png"
+                alt=""
+              />
+
+            </a>
           </li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#food">FOOD</a></li>
+          <li><a href="#review">REVIEW</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
       <!-- carousel  -->
@@ -123,9 +126,9 @@
       </div>
     </header>
     <!-- discover  -->
-    <section class="discover container-fluid">
+    <section class="discover container-fluid" id="discover">
       <!-- discover part 1 -->
-      <div class="discover__title">
+      <div class="discover__title" >
         <div class="discover__title-paragh">
           <h2>Discover <br /></h2>
           <span>OUR STORY</span>
@@ -200,7 +203,7 @@
       </div>
     </section>
     <!-- coffee  -->
-    <section class="coffee container-fluid">
+    <section class="coffee container-fluid" id="coffee"> 
       <div class="coffee__title">
         <h1>Favorite</h1>
         <span>COFFEE</span>
@@ -364,14 +367,12 @@
             <a href="#">View All Menu</a>
           </button>
         </div>
-        <div class="coffee__menu-img">
-          <img src="../assets/img/coffee-bg.jpeg" alt="" />
-        </div>
+     
       </div>
     </section>
 
     <!-- food  -->
-    <section class="food container-fluid">
+    <section class="food container-fluid" id="food">
       <div class="food__title">
         <h1>Favorite</h1>
         <span>FOOD</span>
@@ -520,7 +521,7 @@
       <img src="../assets/img/food8.jpeg" alt="" />
     </div>
 
-    <section class="review container-fluid">
+    <section class="review container-fluid" id="review">
       <div class="review__img">
         <img src="../assets/img/review.jpg" alt="" />
       </div>
@@ -549,7 +550,7 @@
         <button class="contact__call-btn button">Call Us Now</button>
       </div>
     </div>
-    <footer class="footer container-fluid">
+    <footer class="footer container-fluid" id="contact">
       <div class="footer__schedule">
         <div class="footer__schedule-title">
           <p>We are</p>
@@ -578,10 +579,13 @@
           <p>E. contact@baresto.com</p>
         </div>
         <div class="footer__nav-logo">
-          <img
-            src="https://madebydesignesia.com/themes/baresto/images/logo.png"
-            alt=""
-          />
+          <a href="#">
+            <img
+              src="https://madebydesignesia.com/themes/baresto/images/logo.png"
+              alt=""
+            />
+
+          </a>
         </div>
         <div class="footer__nav-social">
           <a href="">
@@ -604,6 +608,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="../utils/swiper.js"></script>
+    <script src="../utils/scrollHeader.js"></script>
+    <script src="../utils/scrollSection.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

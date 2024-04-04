@@ -5,6 +5,7 @@
     z-index: 0;
     background-image: url('../../../../assets/img/coffee.jpg');
     background-repeat: no-repeat;
+    background-position: center;
     background-size: 100%; 
     min-height: 1100px;
     overflow: hidden; 
@@ -31,27 +32,19 @@
     }
     &__menu{
       position: absolute;
+      width: 100%;
       bottom:0;
-      display: flex;
-      
+      background-image: url('../../../img/coffee-bg.jpeg');
+      background-position: center;
+
       &-details{
-        position: absolute;
+
         top: 0;
-        padding:0 50px;
+        padding:50px;
+        width: 40%;
         
       }
-      &-img{
-        background-repeat: no-repeat;
-        background-size: 100%; 
-        width: 100%;
-        height: 800px;
-        background-position: left;
-
-        img{
-
-          height: 100%;
-        }
-      }
+     
     
     }
   }

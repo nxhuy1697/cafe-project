@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -102,9 +103,9 @@ li {
 }
 .home__header-navbar {
   padding: 23px 20px;
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
+  transition: 0.3s ease;
   z-index: 1;
   width: 100%;
 }
@@ -122,6 +123,21 @@ li {
   color: #eaa021;
   transition: all 0.3s ease;
 }
+.home__header-navbar .navbar__link li .active {
+  color: #eaa021;
+}
+.home__header .scroll {
+  background-color: #9c1126;
+  height: 70px;
+  overflow: hidden;
+  transition: #9c1126 0.3s ease;
+}
+.home__header .scroll .navbar__link {
+  height: 100%;
+}
+.home__header .scroll .navbar__link .logo img {
+  height: 50px;
+}
 .home__header-carousel {
   display: flex;
   flex-direction: column;
@@ -129,7 +145,7 @@ li {
   align-items: center;
   position: relative;
   z-index: 0;
-  height: 810px;
+  height: 700px;
 }
 .home__header-carousel .carousel__img {
   position: relative;
@@ -241,6 +257,7 @@ li {
   z-index: 0;
   background-image: url("../../../../assets/img/coffee.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: 100%;
   min-height: 1100px;
   overflow: hidden;
@@ -267,23 +284,15 @@ li {
 }
 .coffee__menu {
   position: absolute;
+  width: 100%;
   bottom: 0;
-  display: flex;
+  background-image: url("../../../img/coffee-bg.jpeg");
+  background-position: center;
 }
 .coffee__menu-details {
-  position: absolute;
   top: 0;
-  padding: 0 50px;
-}
-.coffee__menu-img {
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
-  height: 800px;
-  background-position: left;
-}
-.coffee__menu-img img {
-  height: 100%;
+  padding: 50px;
+  width: 40%;
 }
 
 .food {
@@ -318,10 +327,9 @@ li {
 }
 .food__menu {
   position: absolute;
-  bottom: 0%;
-  display: flex;
+  bottom: 0;
+  width: 100%;
   z-index: 1;
-  justify-content: center;
 }
 .food__menu-img {
   width: 100%;
@@ -420,6 +428,7 @@ li {
   height: 710px;
   padding: 0;
   position: relative;
+  background-attachment: fixed;
 }
 .footer__schedule {
   position: absolute;

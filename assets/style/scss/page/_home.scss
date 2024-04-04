@@ -1,12 +1,13 @@
 // header 
 .home__header {
   padding: 0;
+ 
   // navbar
   &-navbar {
     padding: 23px 20px;
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
+    transition: 0.3s ease;
     z-index: 1;
     width: 100%;
     .navbar__link {
@@ -23,11 +24,30 @@
             transition: all 0.3s ease;
           }
         }
+        .active{
+          color: $yellow;
+        }
         img {
         }
       }
     }
   }
+  .scroll{
+    background-color: $red-3;
+    height: 70px;
+    overflow: hidden;
+    transition: $red-3 0.3s ease;
+    .navbar__link{
+      height: 100%;
+      .logo{
+
+        img{
+          height: 50px;
+        }
+      }
+    }
+  }
+
 
   //carousel
   &-carousel {
@@ -37,7 +57,7 @@
     align-items: center;
     position: relative;
     z-index: 0;
-    height: 810px;
+    height: 700px;
 
     .carousel__img {
       position: relative;
@@ -71,5 +91,7 @@
     }
   }
 }
+
+
 
 

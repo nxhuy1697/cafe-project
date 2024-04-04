@@ -30,10 +30,10 @@
   }
   &__menu {
     position: absolute;
-    bottom: 0%;
-    display: flex;
+    bottom: 0;
+    // background-image: url('../../../img/food.jpg');
+    width: 100%;
     z-index: 1;
-    justify-content: center;
     &-img {
       width: 100%;
       background-repeat: no-repeat;
