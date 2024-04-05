@@ -15,6 +15,11 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
     clickable: true,
   },
+  //autoplay 
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
 
   // And if we need scrollbar
  

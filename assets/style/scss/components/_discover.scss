@@ -1,7 +1,7 @@
 // .discover
 .discover {
     padding: 0;
-  
+    display: block;
     &__title {
       display: flex;
       flex-wrap: wrap;
@@ -73,6 +73,112 @@
             margin-bottom: 15px;
           }
         }
+      }
+    }
+  }
+
+  @media all and (max-width: 390px){
+    .discover{
+      
+      &__title{
+        display: flex;
+      flex-direction: column;
+        &-paragh{
+          display: flex;
+          flex-direction: column;
+          h2{
+            font-size: 58.5px;
+          }
+          span{
+            font-size: 19.5px;
+          }
+
+          p{
+            margin-top: 30px;
+            font-size: 15px;
+          }
+        }
+        &-img{
+          margin-top: 30px;
+        }
+       
+      }
+      &__more{
+        &-card{
+          padding: 20px;
+        }
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  @media all and (max-width: 768px){
+    .discover{
+
+      &__title{
+        display: flex;
+      flex-direction: column;
+        &-paragh{
+          display: flex;
+          flex-direction: column;
+          h2{
+            font-size: 100px;
+          }
+          span{
+            font-size: 40px;
+          }
+
+          p{
+            margin-top: 30px;
+            font-size: 15px;
+          }
+        }
+        &-img{
+          margin-top: 30px;
+        }
+       
+      }
+      &__more{
+        &-card{
+          // padding: 20px;
+        }
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  @media all and (max-width: 1024px){
+    .discover{
+
+      &__title{
+        display: flex;
+
+        &-paragh{
+          display: flex;
+          flex-direction: column;
+          h2{
+            font-size: 100px;
+          }
+          span{
+            font-size: 40px;
+          }
+
+          p{
+            margin-top: 30px;
+            font-size: 15px;
+          }
+        }
+        &-img{
+          margin-top: 30px;
+        }
+       
+      }
+      &__more{
+        &-card{
+          // padding: 20px;
+        }
+        display: flex;
+
       }
     }
   }

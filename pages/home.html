@@ -35,34 +35,47 @@
     />
     <link rel="stylesheet" href="../assets/style/scss/css/index.css" />
   </head>
-  <body>
+  <body class="rounded-lg">
     <!-- header  -->
     <header class="home__header container-fluid" id="home">
       <!-- navbar -->
-      <div class="home__header-navbar ">
-        <ul class="navbar__link">
-          <li><a href="#home" class="active">HOME</a></li>
-          <li><a href="#discover">DISCOVER</a></li>
-          <li><a href="#coffee">COFFEE</a></li>
-          <li>
-            <a href="#" class="logo">
+      <div class="home__header-navbar">
+        <div class="navbar__link">
+          <div class="navbar__link-sections">
+            <a href="#home" class="active">HOME</a>
+          </div>
+          <div class="navbar__link-sections">
+            <a href="#discover">DISCOVER</a>
+          </div>
+          <div class="navbar__link-sections">
+            <a href="#coffee">COFFEE</a>
+          </div>
+
+          <div class="navbar__link-logo">
+            <a href="#" >
               <img
                 src="https://madebydesignesia.com/themes/baresto/images/logo.png"
                 alt=""
               />
-
             </a>
-          </li>
-          <li><a href="#food">FOOD</a></li>
-          <li><a href="#review">REVIEW</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
+          </div>
+
+          <div class="navbar__link-sections">
+            <a href="#food">FOOD</a>
+          </div>
+          <div class="navbar__link-sections">
+            <a href="#review">REVIEW</a>
+          </div>
+          <div class="navbar__link-sections">
+            <a href="#contact">CONTACT</a>
+          </div>
+        </div>
       </div>
       <!-- carousel  -->
       <div class="home__header-carousel swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="carousel__img">
+            <div class="carousel__img img-fluid">
               <img src="../assets/img/carousel.jpg" alt="" />
               <div class="carousel__img-text">
                 <div class="title animate__animated animate__fadeInUp">
@@ -128,9 +141,10 @@
     <!-- discover  -->
     <section class="discover container-fluid" id="discover">
       <!-- discover part 1 -->
-      <div class="discover__title" >
+      <div class="discover__title">
+        
         <div class="discover__title-paragh">
-          <h2>Discover <br /></h2>
+          <h2>Discover </h2>
           <span>OUR STORY</span>
 
           <p>
@@ -203,7 +217,7 @@
       </div>
     </section>
     <!-- coffee  -->
-    <section class="coffee container-fluid" id="coffee"> 
+    <section class="coffee container-fluid" id="coffee">
       <div class="coffee__title">
         <h1>Favorite</h1>
         <span>COFFEE</span>
@@ -367,7 +381,6 @@
             <a href="#">View All Menu</a>
           </button>
         </div>
-     
       </div>
     </section>
 
@@ -513,12 +526,31 @@
     </section>
 
     <div class="bread container-fluid">
-      <img src="../assets/img/food3.jpeg" alt="" />
-      <img src="../assets/img/food4.jpeg" alt="" />
-      <img src="../assets/img/food5.jpeg" alt="" />
-      <img src="../assets/img/food6.jpeg" alt="" />
-      <img src="../assets/img/food7.jpeg" alt="" />
-      <img src="../assets/img/food8.jpeg" alt="" />
+      <div class="bread__item">
+        <img src="../assets/img/food3.jpeg" alt="" />
+      </div>
+      <div class="bread__item">
+        <img src="../assets/img/food4.jpeg" alt="" />
+      </div>
+      <div class="bread__item">
+        <img src="../assets/img/food5.jpeg" alt="" />
+      </div>
+      <div class="bread__item">
+        <img src="../assets/img/food6.jpeg" alt="" />
+      </div>
+      <div class="bread__item">
+        <img src="../assets/img/food7.jpeg" alt="" />
+      </div>
+      <div class="bread__item">
+        <img src="../assets/img/food8.jpeg" alt="" />
+      </div>
+      
+     
+     
+     
+     
+      
+     
     </div>
 
     <section class="review container-fluid" id="review">
@@ -584,7 +616,6 @@
               src="https://madebydesignesia.com/themes/baresto/images/logo.png"
               alt=""
             />
-
           </a>
         </div>
         <div class="footer__nav-social">
@@ -596,8 +627,6 @@
           <a href=""> <i class="fa-brands fa-google-plus-g"></i></a>
           <a href=""><i class="fa-brands fa-skype"></i></a>
           <a href=""> <i class="fa-brands fa-dribbble"></i></a>
-
-
         </div>
       </div>
     </footer>

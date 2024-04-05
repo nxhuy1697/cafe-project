@@ -70,3 +70,74 @@
         }
     }
 }
+@media screen and (max-width: 390px){
+    .review{
+        padding: 0;
+        display: block;
+
+        &__img{
+            display: none;
+        }
+        &__comments{
+            padding: 80px;
+            &-title{
+                p{
+                    font-size: 40px;
+                };
+                span{
+                    font-size: 19.5px;
+                    font-weight: 400;
+                    line-height: 1.6rem;
+                }
+            }
+            &-text{
+                p{
+                    
+                }
+            }
+        }
+    }
+    .contact{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
+@media screen and (max-width: 768px){
+    .review{
+        padding: 0;
+        display: block;
+
+        &__img{
+            display: none;
+        }
+        &__comments{
+            padding: 80px;
+            &-title{
+                p{
+                    font-size: 100px;
+                };
+                span{
+                    font-size: 40px;
+                    font-weight: 700;
+                    line-height: 1.6rem;
+
+                }
+                margin-bottom: 30px;
+            }
+            &-text{
+                p{
+                    font-size: 20px;
+
+                }
+            }
+        }
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+        height: 200px;
+
+    }
+}
