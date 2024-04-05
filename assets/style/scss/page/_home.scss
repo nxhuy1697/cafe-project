@@ -15,7 +15,6 @@
       justify-content: center;
       align-items: center;
       gap: 50px;
-
       a {
         color: $white;
         &:hover {
@@ -25,8 +24,6 @@
         .active {
           color: $yellow;
         }
-
-        
       }
     }
   }

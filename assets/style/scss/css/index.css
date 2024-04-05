@@ -56,11 +56,13 @@ button, input, [tabindex] {
 }
 
 a {
-  color: black;
+  color: #fff;
   text-decoration: none;
+  display: block;
 }
 a:hover {
   text-decoration: none;
+  color: #eaa021;
 }
 
 li {

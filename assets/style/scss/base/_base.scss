@@ -54,10 +54,12 @@ button, input, [tabindex]{
     }
 }
 a{
-    color: black;
+    color: $white;
     text-decoration: none;
+    display: block;
     &:hover{
         text-decoration: none;
+        color: $yellow;
     }
 }
 li{
