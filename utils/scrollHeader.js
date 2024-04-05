@@ -11,6 +11,7 @@ window.onscroll = function () {
 
 function highlightActiveSection() {
   let sections = document.querySelectorAll('section');
+
   let navLinks = document.querySelectorAll('.home__header-navbar .navbar__link a'); // Chỉnh sửa selector ở đây
   let top = window.scrollY;
 

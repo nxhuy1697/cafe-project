@@ -15,16 +15,23 @@
       justify-content: center;
       align-items: center;
       gap: 50px;
-      a {
-        color: $white;
-        &:hover {
-          color: $yellow;
-          transition: all 0.3s ease;
-        }
+      &-sections{
+        // a {
+        //   // color: $white;
+  
+        //   &:hover {
+        //     color: $yellow;
+        //     transition: all 0.3s ease;
+        //   }
+        
+        
+        // }
         .active {
           color: $yellow;
         }
+
       }
+     
     }
   }
   .scroll {

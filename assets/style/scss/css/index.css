@@ -118,14 +118,7 @@ li {
   align-items: center;
   gap: 50px;
 }
-.home__header-navbar .navbar__link a {
-  color: #fff;
-}
-.home__header-navbar .navbar__link a:hover {
-  color: #eaa021;
-  transition: all 0.3s ease;
-}
-.home__header-navbar .navbar__link a .active {
+.home__header-navbar .navbar__link-sections .active {
   color: #eaa021;
 }
 .home__header .scroll {
