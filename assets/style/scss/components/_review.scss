@@ -1,143 +1,181 @@
-.review{
-    display: flex;
-    padding: 0;
-    &__img{
-        flex: 1;
-        // width: 50%;
-        img{
-            width: 100%;
-        }
-    }
-    &__comments{
-        flex: 1;
-        background-color: $red-3;
-        padding: 50px;
-        &-title{
-            text-align: center;
-            p{
-                font-family: "Sacramento";
-                font-size: 99px;
-                color: $yellow;
-                margin: 0;
-            }
-            span {
-                font-family: "Plus Jakarta Sans";
-                font-size: 50px;
-                font-weight: 500;
-                color: $white;
+.review {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  background-image: url('../../../img/review.jpg');
+  background-size: 50%;
+  background-position: center left;
+  background-repeat: no-repeat;
+  &__img {
+    // flex: 1;
 
-              }
-        }
-        &-text{
-            padding: 0 20px;
+    img {
 
-            p{
-                color: $white;
-            }
-            span{
-                color: $white;
-                font-size: 12px;
-            }
-        }
     }
+  }
+  &__comments {
+    width: 50%;
+    background-color: $red-3;
+    padding: 50px;
+    &-title {
+      text-align: center;
+      p {
+        font-family: "Sacramento";
+        font-size: 99px;
+        color: $yellow;
+        margin: 0;
+      }
+      span {
+        font-family: "Plus Jakarta Sans";
+        font-size: 50px;
+        font-weight: 500;
+        color: $white;
+      }
+    }
+    &-text {
+      padding: 0 20px;
+
+      p {
+        color: $white;
+      }
+      span {
+        color: $white;
+        font-size: 12px;
+      }
+    }
+  }
 }
-.contact{
-    min-height: 100px;
+.contact {
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
+//   margin-bottom: 50px;
+  &__special {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    padding: 0 70px;
-    &__special{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        i{
-            color: $red-3;
-            margin-right: 5px;
-        }
-        p{
-            font-family: "Plus Jakarta Sans";
-            margin: 0;
-            font-weight: 600;
-        }
-    
+    i {
+      color: $red-3;
+      margin-right: 5px;
     }
-    &__call{
-        .button{
-            background-color: $white;
-            border: 1.5px solid;
-            font-weight: bold;
-        }
+    p {
+      font-family: "Plus Jakarta Sans";
+      margin: 0;
+      font-weight: 600;
     }
+  }
+  &__call {
+    .button {
+      background-color: $white;
+      border: 1.5px solid;
+      font-weight: bold;
+    }
+  }
 }
-@media screen and (max-width: 390px){
-    .review{
-        padding: 0;
-        display: block;
+@media screen and (max-width: 390px) {
+  .review {
 
-        &__img{
-            display: none;
-        }
-        &__comments{
-            padding: 80px;
-            &-title{
-                p{
-                    font-size: 40px;
-                };
-                span{
-                    font-size: 19.5px;
-                    font-weight: 400;
-                    line-height: 1.6rem;
-                }
-            }
-            &-text{
-                p{
-                    
-                }
-            }
-        }
-    }
-    .contact{
-        display: flex;
-        flex-wrap: wrap;
+    padding: 0;
+
+
+    &__img {
 
     }
+    &__comments {
+      // padding: 80px;
+      width: 100%;
+      &-title {
+        p {
+          font-size: 40px;
+        }
+        span {
+          font-size: 19.5px;
+          font-weight: 400;
+          line-height: 1.6rem;
+        }
+      }
+      &-text {
+        p {
+        }
+      }
+    }
+  }
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
-@media screen and (max-width: 768px){
-    .review{
-        padding: 0;
-        display: block;
+@media screen and (max-width: 768px) and (min-width: 391px) {
+  .review {
+    padding: 0;
+    display: block;
 
-        &__img{
-            display: none;
-        }
-        &__comments{
-            padding: 80px;
-            &-title{
-                p{
-                    font-size: 100px;
-                };
-                span{
-                    font-size: 40px;
-                    font-weight: 700;
-                    line-height: 1.6rem;
-
-                }
-                margin-bottom: 30px;
-            }
-            &-text{
-                p{
-                    font-size: 20px;
-
-                }
-            }
-        }
+    &__img {
+      display: none;
     }
-    .contact{
-        display: flex;
-        flex-direction: column;
-        padding: 50px 0;
-        height: 200px;
+    &__comments {
+      width: 100%;
+      &-title {
+        p {
+          font-size: 100px;
+        }
+        span {
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 1.6rem;
+        }
+        margin-bottom: 30px;
+      }
+      &-text {
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    height: 200px;
+  }
+}
+@media all and (max-width: 1024px)and (min-width: 769px){
+  .review {
+    background-size: 50%;
+    background-position: center left;
+    background-repeat: no-repeat;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+
+    &__img {
 
     }
+    &__comments {
+      // padding: 80px;
+      width: 50%;
+     
+      &-title {
+        p {
+          font-size: 40px;
+        }
+        span {
+          font-size: 19.5px;
+          font-weight: 400;
+          line-height: 1.6rem;
+        }
+      }
+      &-text {
+        p {
+        }
+      }
+    }
+  }
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

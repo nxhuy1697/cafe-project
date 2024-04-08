@@ -60,6 +60,12 @@
   .food {
     background-attachment: unset;
     &__title {
+      h1 {
+        font-size: 58px;
+      }
+      span {
+        font-size: 19px;
+      }
     }
     &__menu {
       &-img {
@@ -76,18 +82,18 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    &__item{
+    &__item {
       height: 90px;
       margin-bottom: 30px;
 
-      img{
+      img {
         height: 100%;
         padding: 10px;
       }
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 391px) {
   .food {
     background-attachment: unset;
     &__title {
@@ -107,11 +113,42 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    &__item{
+    &__item {
       height: 90px;
       margin-bottom: 30px;
 
-      img{
+      img {
+        height: 100%;
+        padding: 10px;
+      }
+    }
+  }
+}
+@media all and (max-width: 1024px) and (min-width: 769px) {
+  .food {
+    background-attachment: unset;
+    &__title {
+    }
+    &__menu {
+      &-img {
+        img {
+          height: unset;
+        }
+      }
+      &-detail {
+        padding: 0;
+      }
+    }
+  }
+  .bread {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+      height: 115px;
+      margin-bottom: 30px;
+
+      img {
         height: 100%;
         padding: 10px;
       }
